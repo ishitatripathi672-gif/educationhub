@@ -1,0 +1,105 @@
+{
+  "name": "PRIME-STUDY",
+  "description": "Next.js LMS Platform with Telegram Bot capabilities, deployable with one-click to Heroku.",
+  "keywords": [
+    "nextjs",
+    "node",
+    "mongodb",
+    "lms"
+  ],
+  "website": "https://github.com/your-username/your-repo",
+  "repository": "https://github.com/your-username/your-repo",
+  "logo": "https://raw.githubusercontent.com/github/explore/main/topics/nextjs/nextjs.png",
+  "env": {
+    "NODE_ENV": {
+      "description": "Environment mode",
+      "value": "production"
+    },
+    "MONGODB_URI": {
+      "description": "Your MongoDB connection URI.",
+      "value": "mongodb://officialstudymeta_db_user:WBvtJER11IGq9nc6@ac-3smyfw2-shard-00-00.t7j4phv.mongodb.net:27017,ac-3smyfw2-shard-00-01.t7j4phv.mongodb.net:27017,ac-3smyfw2-shard-00-02.t7j4phv.mongodb.net:27017/?ssl=true&replicaSet=atlas-12utdd-shard-0&authSource=admin&appName=pwclone"
+    },
+    "JWT_SECRET": {
+      "description": "Secret key for signing and verifying JWTs. (A secure value is generated automatically)",
+      "generator": "secret"
+    },
+    "JWT_ACCESS_EXPIRES": {
+      "description": "JWT Access Token expiry in minutes",
+      "value": "15"
+    },
+    "JWT_ACCESS_EXPIRES_SECONDS": {
+      "description": "JWT Access Token expiry in seconds",
+      "value": "1296000"
+    },
+    "JWT_REFRESH_EXPIRES_DAYS": {
+      "description": "JWT Refresh Token expiry in days",
+      "value": "30"
+    },
+    "JWT_REFRESH_EXPIRES_DAYS1": {
+      "description": "JWT Refresh Token expiry in days",
+      "value": "30"
+    },
+    "NEXT_PUBLIC_APP_NAME": {
+      "description": "The name of your application.",
+      "value": "Prime Study"
+    },
+    "NEXT_PUBLIC_OWNER_USERNAME": {
+      "description": "The telegram username of the bot owner.",
+      "value": "primestudy_owner"
+    },
+    "BASE_URL": {
+      "description": "Base URL of the server (e.g. https://your-app-name.herokuapp.com). Don't add a trailing slash.",
+      "required": true
+    },
+    "NEXT_PUBLIC_BASE_URL": {
+      "description": "Public base URL of the app (same as BASE_URL). Make sure it starts with https://.",
+      "required": true
+    },
+    "NEXT_PUBLIC_URL": {
+      "description": "Public URL of the app (same as BASE_URL). Make sure it starts with https://.",
+      "required": true
+    },
+    "BOT_TOKEN": {
+      "description": "Your Telegram Bot Token.",
+      "value": "8265473973:AAEhWV-3N8WCbrk3qN35DGB4R7GsT2enUu4",
+      "required": false
+    },
+    "LOG_CHANNEL_ID": {
+      "description": "Telegram log channel ID",
+      "value": "-1003729538355",
+      "required": false
+    },
+    "NEXT_PUBLIC_TELEGRAM_BOT_USERNAME": {
+      "description": "Telegram Bot Username",
+      "value": "codewithPrime-Studyrobot",
+      "required": false
+    },
+    "NEXT_PUBLIC_TG": {
+      "description": "Telegram Link",
+      "value": "https://t.me/codewithPrime-StudyLMS",
+      "required": false
+    },
+    "PW_API": {
+      "description": "Penpencil API URL",
+      "value": "https://api.penpencil.co/"
+    },
+    "REFRESH_API_KEY": {
+      "description": "Refresh API Key. (A secure value is generated automatically)",
+      "generator": "secret"
+    },
+    "SHORTNER_TOKEN_SECRET": {
+      "description": "Shortener Token Secret",
+      "value": "LndiS11IJyM9WUlvPi1ablQlanpsMUJPME1nYEd3b3JsZFNhaGlsdipKcTMsfCtke343Rjp5eCZSXk5RNH1jL2ZEYXJrV2ViUFVYP2lDbXJTYXR0dVYpNVxXPHBfO0wyOHNTIiEkZXQ5QHVoW0FTYXRpc2hrRGEoNmRldmlsRQ=="
+    },
+    "MASTER_DPP_TOKEN": {
+      "description": "Master token for DPP",
+      "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3ODE0MDcwMzAuMjIxLCJkYXRhIjp7Il9pZCI6IjY5ZTE4NWUxMWM3Y2JlZGMyNjU4ZDNhZiIsInVzZXJuYW1lIjoiOTQ1ODQzNTU2NSIsImZpcnN0TmFtZSI6IkthaXplbiIsIm9yZ2FuaXphdGlvbiI6eyJfaWQiOiI1ZWIzOTNlZTk1ZmFiNzQ2OGE3OWQxODkiLCJ3ZWJzaXRlIjoicGh5c2ljc3dhbGxhaC5jb20iLCJuYW1lIjoiUGh5c2ljc3dhbGxhaCJ9LCJyb2xlcyI6WyI1YjI3YmQ5NjU4NDJmOTUwYTc3OGM2ZWYiXSwiY291bnRyeUdyb3VwIjoiSU4iLCJ0eXBlIjoiVVNFUiJ9LCJqdGkiOiJmXzF5eU5iTlFobW9oUFJMalZ6cGhBXzY5ZTE4NWUxMWM3Y2JlZGMyNjU4ZDNhZiIsImlhdCI6MTc4MDgwMjIzMH0.uags8M_6n8f6NV84CQpVIgfM2zL0C1197KWB8d46gp8",
+      "required": false
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+}
